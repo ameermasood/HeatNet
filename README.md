@@ -1,6 +1,6 @@
 # 6D Pose Estimation via Keypoint Heatmap Regression with RGB-D Residual Neural Networks
 
-This repository provides the official implementation of our Machine Learning & Deep Learning project focused on 6D object pose estimation.
+This repository provides the official implementation of our Machine Learning & Deep Learning project focused on 6D object pose estimation. 
 
 ---
 
