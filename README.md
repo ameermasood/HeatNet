@@ -1,10 +1,12 @@
 # 6D Pose Estimation via Keypoint Heatmap Regression with RGB-D Residual Neural Networks
 
-This repository provides the official implementation of our Machine Learning & Deep Learning project focused on 6D object pose estimation. 
+This repository provides the official implementation of our research on 6D Object Pose Estimation, featuring a novel RGB-D cross-fusion architecture.
+
+Our modular framework achieves a highly competitive mean ADD-based accuracy of 92.41% on the LINEMOD dataset by combining state-of-the-art object detection with dense keypoint heatmap regression.
 
 ---
 
-## 📂 Structure
+## Structure
 
 ```
 .
@@ -24,7 +26,7 @@ This repository provides the official implementation of our Machine Learning & D
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Step 1: Clone the Repository
 
@@ -57,7 +59,7 @@ jupyter lab notebooks/end_to_end/ph5_01_end_to_end.ipynb
 
 ---
 
-## 👥 Authors
+## Authors
 This project was created by:
 
 Ismail Aljosevic (ismail.aljosevic@studenti.polito.it)
@@ -67,3 +69,6 @@ Amir Masoud Almasi (amirmasoud.almasi@studenti.polito.it)
 Ana Parovic (ana.parovic@studenti.polito.it)
 
 Ashkan Shafiei (ashkan.shafiei@studenti.polito.it)
+
+## Acknowledgments
+We thank Prof. Barbara Caputo, Dr. Raffaele Camoriano, Stephany Chanelo, and Paolo Rabino for their foundational instruction and guidance in the 3D learning course at Politecnico di Torino, which inspired the initial direction of this work.
