@@ -1,0 +1,52 @@
+{
+  "full_data": {
+    "raw_data_dir": "data/raw/data",
+    "output_dir": "data/full_data",
+    "test_size": 0.1,
+    "seed": 42
+  },
+  "yolo_data": {
+    "train_image_dir": "data/full_data/train/images",
+    "train_gt_json": "data/full_data/train/gt.json",
+    "output_dir": "data/yolo_data",
+    "val_size": 0.2,
+    "seed": 8
+  },
+  "crop_rgb": {
+    "label_dir": "models/yolov10m/bbox_predictions/labels",
+    "image_dir": "data/full_data/train/images",
+    "output_dir": "data/cropped_resized_data",
+    "max_workers": 8
+  },
+  "crop_depth": {
+    "label_dir": "models/yolov10m/bbox_predictions/labels",
+    "image_dir": "data/full_data/train/depth",
+    "output_dir": "data/cropped_resized_depth_data",
+    "max_workers": 8
+  },
+  "bbox_predict": {
+    "model_path": "models/yolov10m/weights/best.pt",
+    "image_dir": "data/full_data/train/images",
+    "output_dir": "models/yolov10m/bbox_predictions/labels",
+    "conf_threshold": 0.25,
+    "image_size": 640,
+    "max_det": 1
+  },
+  "sample_3d": {
+    "cad_model_dir": "data/raw/models",
+    "output_json": "data/point_sampling_data/3D_50_keypoints_fps.json",
+    "method": "fps",
+    "k_points": 50
+  },
+  "project_2d": {
+    "gt_json": "data/full_data/train/gt.json",
+    "kp3d_json": "data/point_sampling_data/3D_50_keypoints_fps.json",
+    "yolo_label_dir": "models/yolov10m/bbox_predictions/labels",
+    "output_json": "data/point_sampling_data/2D_50_keypoints_labels_fps.json"
+  },
+  "heatmaps": {
+    "input_json": "data/point_sampling_data/2D_50_keypoints_labels_fps.json",
+    "output_dir": "data/point_sampling_data/heatmaps_sigma_2/heatmaps_fps",
+    "sigma": 2.0
+  }
+}

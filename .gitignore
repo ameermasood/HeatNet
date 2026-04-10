@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
 .ipynb_checkpoints/
 
 # Data files (large data should not be committed)
@@ -35,6 +36,16 @@ notebooks/end_to_end/.ipynb_checkpoints/
 logs/
 results/
 *.log
+outputs/*
+!outputs/README.md
+!outputs/checkpoints/
+!outputs/checkpoints/.gitkeep
+!outputs/histories/
+!outputs/histories/.gitkeep
+!outputs/predictions/
+!outputs/predictions/.gitkeep
+!outputs/evaluations/
+!outputs/evaluations/.gitkeep
 
 # IDE settings
 .vscode/

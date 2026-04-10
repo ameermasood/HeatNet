@@ -1,0 +1,12 @@
+{
+  "model": "cross_fusion",
+  "yolo_model": "models/yolov10m/weights/best.pt",
+  "kpd_model": "models/resnet/extended_mish_model.pth",
+  "kp3d_json": "data/point_sampling_data/3D_50_keypoints_fps.json",
+  "image_dir": "data/full_data/test/images",
+  "depth_dir": "data/full_data/test/depth",
+  "output_json": "outputs/predictions/cross_fusion_mish_test.json",
+  "activation": "mish",
+  "num_keypoints": 50,
+  "max_workers": 4
+}
