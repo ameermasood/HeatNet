@@ -240,14 +240,12 @@ Key takeaways:
 - Among the tested schedulers, **OneCycleLR** is consistently the strongest overall.
 - **Mish** is the best-performing activation on average in this comparison.
 - Relative to the **RGB baseline**, the **RGB-D cross-fusion extension** delivers the strongest overall performance in the project, showing that depth is beneficial when fused with RGB features through the residual cross-fusion design.
-- The gap is not uniform across all scenes: the extension helps most in cleaner views and stronger geometric setups, while difficult occlusions remain challenging for both variants.
 
 For the full analysis, ablations, and qualitative results, see the report in [docs](/Users/amirmasoudalmasi/HeatNet/docs).
 
 ---
 
 ## Authors
-This project was created by:
 
 Ismail Aljosevic (ismail.aljosevic@studenti.polito.it)
 
