@@ -1,0 +1,8 @@
+{
+  "kp2d_json": "outputs/predictions/cross_fusion_mish_test.json",
+  "kp3d_json": "data/point_sampling_data/3D_50_keypoints_fps.json",
+  "gt_json": "data/full_data/test/gt.json",
+  "output_json": "outputs/evaluations/cross_fusion_mish_eval.json",
+  "threshold_ratio": 0.1,
+  "symmetric_objects": ["10", "11"]
+}

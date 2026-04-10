@@ -1,0 +1,18 @@
+{
+  "model": "cross_fusion",
+  "image_dir": "data/cropped_resized_data",
+  "depth_dir": "data/cropped_resized_depth_data",
+  "heatmap_dir": "data/point_sampling_data/heatmaps_sigma_2/heatmaps_fps",
+  "save_path": "outputs/checkpoints/cross_fusion_mish_fps.pth",
+  "history_path": "outputs/histories/cross_fusion_mish_fps.json",
+  "activation": "mish",
+  "scheduler": "none",
+  "epochs": 30,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.00001,
+  "num_keypoints": 50,
+  "train_ratio": 0.8,
+  "split_seed": 8,
+  "num_workers": 4
+}

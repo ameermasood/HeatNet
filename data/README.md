@@ -1,9 +1,12 @@
 # Data
 
-This folder contains all the images, depth maps, labels and keypoint files used by the project.
+This folder contains the dataset files and derived training assets used by the project.
 
 > **Note:** Due to the size limit, large data files are **not** stored here. You can download them from:
 > https://drive.google.com/drive/folders/1bMuIT9NpPXCQPV6SGFvr6aIEn42B3BZ-?usp=sharing
+
+In the current script-based workflow, this folder is meant for data inputs and intermediate derived assets.
+Final prediction and evaluation outputs are written under [outputs](/Users/amirmasoudalmasi/HeatNet/outputs), not here.
 
 ## Folder structure
 
@@ -27,10 +30,11 @@ This folder contains all the images, depth maps, labels and keypoint files used 
   - `heatmaps_sigma_2/`: Gaussian heatmaps for training
 
 - **`predicted_key_points/`**  
-  2D keypoint JSON outputs from each model variant, used by the PnP solver to compute the final 6D pose.
+  Legacy notebook-era 2D keypoint JSON outputs from each model variant.
+  In the new script workflow, equivalent prediction artifacts are stored under `outputs/predictions/`.
 
 - **`yolo_data/`**  
   YOLO-formatted data for object detection:
   - `train/` and `val/` image folders  
   - `.txt` label files  
-  - `data.yml` configuration
+  - `data.yaml` configuration

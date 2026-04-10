@@ -1,0 +1,219 @@
+{
+  "dataset": "LINEMOD",
+  "metric": "ADD-based accuracy (%)",
+  "objects": [
+    "ape",
+    "bench vise",
+    "camera",
+    "can",
+    "cat",
+    "driller",
+    "duck",
+    "eggbox*",
+    "glue*",
+    "hole puncher",
+    "iron",
+    "lamp",
+    "phone"
+  ],
+  "models": {
+    "baseline_fps": {
+      "accuracy_results": {
+        "ape": 52.419355,
+        "bench vise": 92.561983,
+        "camera": 90.833333,
+        "can": 90.0,
+        "cat": 77.118644,
+        "driller": 96.638655,
+        "duck": 61.6,
+        "eggbox*": 87.2,
+        "glue*": 86.885246,
+        "hole puncher": 83.870968,
+        "iron": 93.913043,
+        "lamp": 95.901639,
+        "phone": 89.516129
+      },
+      "mean_accuracy": 84.496846
+    },
+    "baseline_cps": {
+      "accuracy_results": {
+        "ape": 47.580645,
+        "bench vise": 90.082645,
+        "camera": 82.5,
+        "can": 91.666667,
+        "cat": 82.20339,
+        "driller": 96.638655,
+        "duck": 60.0,
+        "eggbox*": 89.6,
+        "glue*": 88.52459,
+        "hole puncher": 79.032258,
+        "iron": 96.521739,
+        "lamp": 95.901639,
+        "phone": 86.290323
+      },
+      "mean_accuracy": 83.580196
+    },
+    "cross_fusion_relu": {
+      "accuracy_results": {
+        "ape": 62.096774,
+        "bench vise": 95.041322,
+        "camera": 95.0,
+        "can": 91.666667,
+        "cat": 89.830508,
+        "driller": 95.798319,
+        "duck": 78.4,
+        "eggbox*": 90.4,
+        "glue*": 95.901639,
+        "hole puncher": 83.870968,
+        "iron": 97.368421,
+        "lamp": 98.360656,
+        "phone": 96.774194
+      },
+      "mean_accuracy": 90.03919
+    },
+    "cross_fusion_silu": {
+      "accuracy_results": {
+        "ape": 60.483871,
+        "bench vise": 96.694215,
+        "camera": 89.166667,
+        "can": 90.0,
+        "cat": 76.271186,
+        "driller": 93.277311,
+        "duck": 68.8,
+        "eggbox*": 86.4,
+        "glue*": 91.803279,
+        "hole puncher": 85.483871,
+        "iron": 92.173913,
+        "lamp": 93.442623,
+        "phone": 95.16129
+      },
+      "mean_accuracy": 86.089094
+    },
+    "cross_fusion_mish": {
+      "accuracy_results": {
+        "ape": 68.548387,
+        "bench vise": 92.561983,
+        "camera": 85.833333,
+        "can": 90.833333,
+        "cat": 83.898305,
+        "driller": 96.638655,
+        "duck": 77.6,
+        "eggbox*": 91.2,
+        "glue*": 95.081967,
+        "hole puncher": 87.903226,
+        "iron": 91.22807,
+        "lamp": 97.540984,
+        "phone": 94.354839
+      },
+      "mean_accuracy": 88.709468
+    },
+    "cross_fusion_relu_cos": {
+      "accuracy_results": {
+        "ape": 73.387097,
+        "bench vise": 97.520661,
+        "camera": 92.5,
+        "can": 93.333333,
+        "cat": 93.220339,
+        "driller": 98.319328,
+        "duck": 80.0,
+        "eggbox*": 96.0,
+        "glue*": 95.901639,
+        "hole puncher": 93.548387,
+        "iron": 95.652174,
+        "lamp": 96.721311,
+        "phone": 95.16129
+      },
+      "mean_accuracy": 92.405043
+    },
+    "cross_fusion_silu_cos": {
+      "accuracy_results": {
+        "ape": 75.806452,
+        "bench vise": 98.347107,
+        "camera": 94.166667,
+        "can": 96.666667,
+        "cat": 83.050847,
+        "driller": 94.957983,
+        "duck": 77.6,
+        "eggbox*": 94.4,
+        "glue*": 94.262295,
+        "hole puncher": 94.354839,
+        "iron": 95.652174,
+        "lamp": 98.360656,
+        "phone": 95.16129
+      },
+      "mean_accuracy": 91.752844
+    },
+    "cross_fusion_mish_cos": {
+      "accuracy_results": {
+        "ape": 68.548387,
+        "bench vise": 96.694215,
+        "camera": 96.666667,
+        "can": 92.5,
+        "cat": 88.983051,
+        "driller": 97.478992,
+        "duck": 83.2,
+        "eggbox*": 91.2,
+        "glue*": 96.721311,
+        "hole puncher": 93.548387,
+        "iron": 94.782609,
+        "lamp": 100.0,
+        "phone": 97.580645
+      },
+      "mean_accuracy": 92.146482
+    },
+    "cross_fusion_relu_poly": {
+      "accuracy_results": {
+        "ape": 62.903226,
+        "bench vise": 95.041322,
+        "camera": 89.166667,
+        "can": 92.5,
+        "cat": 87.288136,
+        "driller": 93.277311,
+        "duck": 72.8,
+        "eggbox*": 87.2,
+        "glue*": 94.262295,
+        "hole puncher": 89.516129,
+        "iron": 91.304348,
+        "lamp": 97.540984,
+        "phone": 84.677419
+      },
+      "mean_accuracy": 87.498295
+    },
+    "cross_fusion_silu_poly": {
+      "accuracy_results": {
+        "ape": 59.677419,
+        "bench vise": 93.38843,
+        "camera": 89.166667,
+        "can": 86.666667,
+        "cat": 81.355932,
+        "driller": 92.436975,
+        "duck": 67.2,
+        "eggbox*": 88.0,
+        "glue*": 90.163934,
+        "hole puncher": 82.258065,
+        "iron": 92.173913,
+        "lamp": 98.360656,
+        "phone": 94.354839
+      },
+      "mean_accuracy": 85.784884
+    },
+    "cross_fusion_mish_poly": {
+      "accuracy_results": {
+        "ape": 65.322581,
+        "bench vise": 92.561983,
+        "camera": 90.0,
+        "can": 89.166667,
+        "cat": 82.20339,
+        "driller": 95.798319,
+        "duck": 72.0,
+        "eggbox*": 88.8,
+        "glue*": 89.344262,
+        "hole puncher": 82.258065,
+        "iron": 90.434783,
+        "lamp": 98.360656,
+        "phone": 91.935484
+      },
+      "mean_accuracy": 86.783553
+    }
+  }
+}
